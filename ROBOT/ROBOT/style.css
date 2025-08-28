@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+/* Reset de margin e padding */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #636363;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*NAVBAR*/
+header{
+    background-color: #83adca;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.container nav a{
+    margin: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+/*CARROSSEL*/
+.carousel-item img {
+  max-height: 800px; 
+  object-fit: contain; 
+}
+
+/*CARDS*/
+#machine{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    gap: 20px;
+}
+
+.info {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.info h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.info img{
+    width: 250px;
+}
+
+.info p{
+    color: #fff;
+    font-size: 12px;
+}
+
+/*INFORMAÇÕES*/
+#mach1 {
+  color: #fff;
+  margin-top: 5rem;
+  text-align: center; 
+}
+
+#mach1 H3{
+    font-weight: bold;
+}
+
+.maq {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 2rem; 
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maq img {
+  width: 300px;
+  height: auto;
+  flex-shrink: 0; 
+}
+
+.maq p {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #fff;
+  text-align: left;
+}
+
+.maq p a{
+    text-decoration: underline;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*RODAPÉ*/
+#main-footer {
+  background-color: #2f2f2f; 
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0 0 0.5rem;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #7da6ce; 
+}
+
+.social-links i {
+  font-size: 15px;
+  margin-right: 8px;
+}
+
+
+/*NAVBAR MOBILE*/
+@media (max-width: 600px) {
+  header .container {
+    justify-content: center !important;
+  }
+
+  header nav {
+    display: none;
+  }
+
+    #mach1 .maq {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #mach1 .maq img {
+    width: 100%; /* ou um tamanho menor se preferir */
+    max-width: 150px; /* para não esticar demais */
+  }
+
+  #mach1 .maq p{
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 8px;
+  }
+
+  .maq p a{
+    text-decoration: underline;
+    color: #fff;
+    font-weight: bold;
+}
+
+}
